@@ -1,10 +1,13 @@
 <header role="banner">
-    <!--<h1 class="logo">{{ site.title }}</h1>-->
+    <!-- <h1 class="logo">{{ site.title }}</h1> -->
     <nav role="navigation">
-<ul>
- {% for item in site.data.navigation.links %}
-    <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
- {% endfor %}
-</ul>
-</nav>
+        <ul>
+            <li class="photo-list-item">
+                <img src="https://avatars.githubusercontent.com/u/22344575?s=460&u=ecfa7061cd0eb0d4d93e9a3c68ad751c2851532f&v=4" alt="Photo of Ryan Forgie" class="profile-photo">
+            </li>
+            {% for item in site.data.navigation.links %}
+                <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
 </header>
