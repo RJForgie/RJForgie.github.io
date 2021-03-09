@@ -155,16 +155,16 @@ strong, b {
 }
 
 .post ul, .project ul, .post ol  {
-	//list-style-position: inside;
+	list-style-position: inside;
 }
 
 main {
-	display:flex;
+	display: flex;
 	flex-direction: row;
-	flex-wrap:wrap;
-	max-width:60rem;
-	margin:2rem auto;
-	padding:1rem;
+	flex-wrap: wrap;
+	max-width: 60rem;
+	margin: 0 auto 2rem auto;
+	padding: 1rem;
 }
 
 
@@ -221,4 +221,37 @@ figcaption {
 
 .logo {
 	font-size: 1.2rem;
+}
+
+.header {
+	display: flex;
+	padding: 1rem 1rem;
+	max-width: 60rem;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.header__title-block {
+	display: flex;
+	align-items: center;
+}
+
+.header__link-block {
+	display: flex;
+	align-items: center;
+}
+
+.header__title {
+	margin: 0 0 0 1rem;
+	padding: 0;
+}
+
+.header__link {
+	margin-right: 1rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.header__link:last-of-type {
+	margin-right: 0;
 }
