@@ -36,6 +36,7 @@ a {
 pre {
 	margin: 0.5rem 0;
 	padding: 0.5rem;
+	white-space: pre-wrap;
 }
 
 .post p {
@@ -232,7 +233,7 @@ main {
 	}
 }
 
-@media screen and (max-width: 26rem) {
+@media screen and (max-width: 25rem) {
 	.header__title {
 		display: none;
 	}
